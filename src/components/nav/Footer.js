@@ -10,7 +10,7 @@ function Footer() {
             maxWidth: "100vw",
             }}>
             
-            <h4 style={{color: "white"}}>Harbour Ecommerce &copy; 2021, All rights reserved.</h4>
+            <h5 style={{color: "white"}}>Harbour Ecommerce &copy; 2021, All rights reserved.</h5>
         </div>
     )
 }
