@@ -108,6 +108,7 @@ const StripeCheckout = ({ history }) => {
 
   return (
     <>
+      <h4 className="display-4">{succeeded ? "Thank you for shopping with us!" : "Complete Your Purchase"}</h4>
       {!succeeded && (
         <div>
           {coupon && totalAfterDiscount !== undefined ? (
