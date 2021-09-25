@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { currentUser } from "./functions/auth";
 import { LoadingOutlined } from "@ant-design/icons";
 
+
 // import Login from "./pages/auth/Login";
 // import Register from "./pages/auth/Register";
 // import Home from "./pages/Home";
@@ -43,6 +44,7 @@ const Login = lazy(() => import("./pages/auth/Login"));
 const Register = lazy(() => import("./pages/auth/Register"));
 const Home = lazy(() => import("./pages/Home"));
 const Header = lazy(() => import("./components/nav/Header"));
+const Footer = lazy(() => import("./components/nav/Footer"));
 const SideDrawer = lazy(() => import("./components/drawer/SideDrawer"));
 
 const RegisterComplete = lazy(() => import("./pages/auth/RegisterComplete"));
@@ -152,6 +154,7 @@ const App = () => {
         <AdminRoute exact path="/admin/coupon" component={CreateCouponPage} />
         <UserRoute exact path="/payment" component={Payment} />
       </Switch>
+      <Footer />
       </Suspense>
   );
 };

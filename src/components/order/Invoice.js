@@ -31,7 +31,7 @@ const Invoice = ({ order }) => (
       <Table data={order.products}>
         <TableBody>
           <DataTableCell getContent={(x) => x.product.title} />
-          <DataTableCell getContent={(x) => `₹${x.product.price}`} />
+          <DataTableCell getContent={(x) => `Rs. ${x.product.price}`} />
           <DataTableCell getContent={(x) => x.count} />
           <DataTableCell getContent={(x) => x.product.brand} />
           <DataTableCell getContent={(x) => x.product.color} />
@@ -56,11 +56,11 @@ const Invoice = ({ order }) => (
         {"\n"}
         <Text>
           Total Paid: {"       "}
-          {order.paymentIntent.amount}
+          Rs. {" "}{order.paymentIntent.amount}
         </Text>
       </Text>
 
-      <Text style={styles.footer}> ~ Thank you for shopping with us ~ </Text>
+      <Text style={styles.footer}> ~ Thank you for shopping with us! ~ </Text>
     </Page>
   </Document>
 );
