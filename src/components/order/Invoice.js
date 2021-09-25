@@ -31,7 +31,7 @@ const Invoice = ({ order }) => (
       <Table data={order.products}>
         <TableBody>
           <DataTableCell getContent={(x) => x.product.title} />
-          <DataTableCell getContent={(x) => `$${x.product.price}`} />
+          <DataTableCell getContent={(x) => `₹${x.product.price}`} />
           <DataTableCell getContent={(x) => x.count} />
           <DataTableCell getContent={(x) => x.product.brand} />
           <DataTableCell getContent={(x) => x.product.color} />
